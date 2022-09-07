@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bouteilles>
+    <bouteille>
+        <marque>Cristalline</marque>
+        <volume unite="cl">150</volume>
+        <ions>
+            <positif>
+                <ion nom="Calcium">
+                    <quantite unite="mg">71</quantite>
+                </ion>
+                <ion nom="Magnesium">
+                    <quantite unite="mg">5.5</quantite>
+                </ion>
+            </positif>
+            <negatif>
+                <ion nom="Chlorure">
+                    <quantite unite="mg/L">20</quantite>
+                </ion>
+                <ion nom="Nitrate">
+                    <quantite unite="mg/L">1</quantite>
+                </ion>
+            </negatif>
+        </ions>
+        <source>St-Cyr la Source</source>
+        <departement>Loiret</departement>
+    </bouteille>
+</bouteilles>
+
+<bouteilles>
+    <bouteille>
+        <codeBarre>123132132132</codeBarre>
+        <ph>7,5</ph>
+        <contenance unite="cl">150</contenance>
+        <origine>
+            <departement>Loiret</departement>
+            <ville>St-Cyr la source</ville>
+        </origine>
+        <ions>
+            <positif>
+                <ion nom="Calcium" qt="71" unite="mg/l"/>
+                <ion nom="Magnesium" qt="5,5" unite="mg/l"/>
+            </positif>
+            <negatif>
+                <ion nom="Chlorure" qt="20" unite="mg/l"/>
+                <ion nom="Nitrate" qt="1" unite="mg/l"/>
+            </negatif>
+        </ions>
+    </bouteille>
+</bouteilles>

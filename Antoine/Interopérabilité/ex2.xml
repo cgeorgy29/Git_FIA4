@@ -1,0 +1,27 @@
+<nuages>
+    <nuage hydrometeore="oui">
+        <variete>Cumulonimbus</variete>
+        <especes>
+            <espece>calvus</espece>
+            <espece>capilatus</espece>
+            <espece type="gros">mamatus</espece>
+        </especes>
+        <altitudes>
+            <min unite="m">300</min>
+            <max unite="m">18000</min>
+        </altitudes>
+    </nuage>
+    <nuage hydrometeore="non">
+        <variete>Altocumulus</variete>
+        <especes>
+            <espece>calvus</espece>
+            <espece>lenticularis</espece>
+            <espece>capilatus</espece>
+            <espece type="gros">mamatus</espece>
+        </especes>
+        <altitudes>
+            <min unite="m">500</min>
+            <max unite="m">15000</min>
+        </altitudes>
+    </nuage>
+</nuages>
