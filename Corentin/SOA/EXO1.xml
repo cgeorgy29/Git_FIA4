@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pack_eau>
+    <bouteille>
+        <marque>Cristaline</marque>
+       <volume unit="cl">150</volume>
+       <code_barre>3274080005003</code_barre>
+       <ph>7,5</ph>
+       <origine>
+            <dep>Loiret</dep>
+            <ville>St-Cyr la Source</ville>
+       </origine>
+       <minéraux>
+            <ion rhésus="+" unit="mg" nom="calcium">71</ion>
+            <ion rhésus="+" unit="mg" nom="magnésium">5,5</ion>
+            <ion rhésus="-" unit="mg" nom="chlorures">20</ion>
+            <ion rhésus="-" unit="mg" nom="nitrate">1</ion>
+        </minéraux>
+        <résidus>
+            <résidu>fer</résidu>
+        </résidus>
+    </bouteille>
+    <bouteille>
+        <marque>Cristaline</marque>
+       <volume unit="cl">50</volume>
+       <code_barre>3274080005008</code_barre>
+       <ph>7,4</ph>
+       <origine>
+            <dep>Alpes Maritime</dep>
+            <ville>Aurèle</ville>
+       </origine>
+       <minéraux>
+            <ion rhésus="+" unit="mg" nom="calcium">98</ion>
+            <ion rhésus="+" unit="mg" nom="magnésium">4</ion>
+            <ion rhésus="-" unit="mg" nom="chlorures">3.6</ion>
+            <ion rhésus="-" unit="mg" nom="nitrate">2</ion>
+        </minéraux>
+        <résidus>
+            <résidu>fer</résidu>
+        </résidus>
+    </bouteille>
+</pack_eau>
