@@ -1,11 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<variété>
-    <nom></nom>
-    <espèce>
-        <nom></nom>
-    </espèce>
-    <altitude></altitude>
-    <hydrométéore></hydrométéore>
-
-
-</variété>
+<!DOCTYPE nuages SYSTEM "nuages.dtd" >
+<nuages>
+    <nuage hydrometeore="oui">
+        <variete>Cumulonimbus</variete>
+        <especes>
+            <espece>calvus</espece>
+            <espece>capilatus</espece>
+            <espece type="gros">mamatus</espece>
+        </especes>
+        <altitudes>
+            <min unite="m">300</min>
+            <max unite="m">18000</max>
+        </altitudes>
+    </nuage>
+    <nuage hydrometeore="non">
+        <variete>Altocumulus</variete>
+        <especes>
+            <espece>calvus</espece>
+            <espece>lenticularis</espece>
+            <espece>capilatus</espece>
+            <espece type="gros">mamatus</espece>
+        </especes>
+        <altitudes>
+            <min unite="m">500</min>
+            <max unite="m">15000</max>
+        </altitudes>
+    </nuage>
+</nuages>
