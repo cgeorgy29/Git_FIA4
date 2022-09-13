@@ -1,0 +1,14 @@
+<!ELEMENT nuages (nuage*)>
+<!ELEMENT nuage (variete, especes, altitudes)>
+<!ATTLIST nuage hydrometeore (oui | non) #IMPLIED>
+<!ELEMENT variete (#PCDATA)>
+<!ELEMENT especes (espece+)>
+<!ELEMENT espece (#PCDATA)>
+<!ATTLIST espece type CDATA #IMPLIED>
+<!ELEMENT altitudes (min,max)>
+<!ELEMENT min (#PCDATA)>
+<!ELEMENT max (#PCDATA)>
+<!ATTLIST min unite CDATA "m">
+<!ATTLIST max unite CDATA "m">
+
+

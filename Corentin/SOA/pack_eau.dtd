@@ -1,0 +1,17 @@
+<!ELEMENT pack_eau (bouteille*)>
+<!ELEMENT bouteille (marque, volume, code_barre, ph, origine, minéraux, résidus?)>
+<!ELEMENT marque (#PCDATA)>
+<!ELEMENT volume (#PCDATA)>
+<!ATTLIST volume unit (md | cl | dl | l)  "cl">
+<!ELEMENT code_barre (#PCDATA)>
+<!ELEMENT ph (#PCDATA)>
+<!ELEMENT origine (dep, ville)>
+<!ELEMENT dep (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT minéraux (ion+)>
+<!ELEMENT ion (#PCDATA)>
+<!ATTLIST ion rhésus CDATA #REQUIRED>
+<!ATTLIST ion unit CDATA "mg/l">
+<!ATTLIST ion nom CDATA #REQUIRED>
+<!ELEMENT résidus (résidu+)>
+<!ELEMENT résidu (#PCDATA)>

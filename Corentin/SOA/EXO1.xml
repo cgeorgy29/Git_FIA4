@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pack_eau SYSTEM "./pack_eau.dtd" >
+
 <pack_eau>
     <bouteille>
         <marque>Cristaline</marque>

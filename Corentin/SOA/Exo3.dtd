@@ -1,0 +1,23 @@
+<!-- Exo3 
+DTD  de la biblio -->
+
+<!ELEMENT biblio (livre | article)*>
+<!ELEMENT livre (titre, auteurs,tomes+,editeur,ISBN,avisP?)>
+<!ELEMENT article (titre, auteurs,journal,avisP?)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteurs (auteur+)>
+<!ELEMENT auteur (nom,prenom)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT tomes (tome+)>
+<!ELEMENT tome (EMPTY)>
+<!ATTLIST tome numTome ID #REQUIRED>
+<!ATTLIST tome nbPage CDATA #REQUIRED>
+<!ELEMENT editeur (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT avisP (#PCDATA)>
+<!ELEMENT journal (TitreJ,numJournal,datePubli)>
+<!ELEMENT TitreJ (#PCDATA)>
+<!ELEMENT numJournal (#PCDATA)>
+<!ELEMENT datePubli (#PCDATA)>
+
