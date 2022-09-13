@@ -1,0 +1,26 @@
+<!DOCTYPE biblio[
+    <!ELEMENT biblio (livre | article)*>
+    <!ELEMENT article (titre, auteurs, publication, avis?)>
+    <!ELEMENT livre (titre, auteurs, tomes, informations, avis?)>
+
+    <!ELEMENT titre (#PCDATA)>
+    <!ELEMENT auteurs (auteur)+>
+    <!ELEMENT auteur (#PCDATA)>
+    <!ELEMENT tome (#PCDATA)>
+    <!ELEMENT tomes (tome+)>
+    <!ELEMENT informations EMPTY>
+    <!ELEMENT references EMPTY>
+    <!ELEMENT avis (#PCDATA)>
+
+    <!ATTLIST tome nbpage CDATA #REQUIRED>
+    <!ATTLIST informations
+        nomediteur CDATA #IMPLIED
+        lieuedition CDATA #IMPLIED
+        lieuimpression CDATA #IMPLIED
+        numisbn CDATA #IMPLIED>
+    <!ATTLIST references
+            nomjournal CDATA #IMPLIED
+            numeropages CDATA #IMPLIED
+            anneepublication CDATA #IMPLIED
+            numjournal CDATA #IMPLIED>
+]

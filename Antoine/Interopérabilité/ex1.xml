@@ -32,19 +32,45 @@
         <codeBarre>123132132132</codeBarre>
         <ph>7,5</ph>
         <contenance unite="cl">150</contenance>
-        <origine>
+        <source>
             <departement>Loiret</departement>
             <ville>St-Cyr la source</ville>
-        </origine>
-        <ions>
-            <positif>
+        </source>
+        <composition>
+            <ionsPositifs>
                 <ion nom="Calcium" qt="71" unite="mg/l"/>
                 <ion nom="Magnesium" qt="5,5" unite="mg/l"/>
-            </positif>
-            <negatif>
+            </ionsPositifs>
+            <ionsNegatifs>
                 <ion nom="Chlorure" qt="20" unite="mg/l"/>
                 <ion nom="Nitrate" qt="1" unite="mg/l"/>
-            </negatif>
-        </ions>
+            </ionsNegatifs>
+            <residus>
+                <residu>fer</residu>
+            </residus>
+        </composition>
     </bouteille>
 </bouteilles>
+
+<!DOCTYPE bouteilles [
+    <!ELEMENT bouteilles (bouteille)*>
+    <!ELEMENT bouteille (marque, codeBarre, ph, contenance, source, composition)>
+    <!ELEMENT marque (#PCDATA)>
+    <!ELEMENT codeBarre (#PCDATA)>
+    <!ELEMENT ph (#PCDATA)>
+    <!ELEMENT contenance (#PCDATA)>
+    <!ELEMENT source (departement,ville)>
+    <!ELEMENT departement (#PCDATA)>
+    <!ELEMENT ville (#PCDATA)>
+    <!ELEMENT composition (ionsPositifs, ionsNegatifs, residus?)>
+    <!ELEMENT ionsPositifs (ion)*>
+    <!ELEMENT ionsNegatifs (ion)*>
+    <!ELEMENT ion (EMPTY)>
+    <!ELEMENT residus (residu)*>
+    <!ELEMENT residu (residu)*>
+    <!ATTLIST contenance unite (ml | cl | dl | l) "cl">
+    <!ATTLIST ion 
+        nom CDATA #REQUIRED
+        qt CDATA #REQUIRED
+        unite CDATA "mg/l">
+]>
