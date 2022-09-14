@@ -19,35 +19,40 @@ ou -> count(/Nuages/Nuage[.//espèce = "flocus"]) --> plus proche de la consigne
 ou -> count(//nom[espèce = "flocus"])
 
 5. Sélectionne les nuages dont l’altitude minimale est inférieure ou égale à 2000 mètres.
--> /Nuages/Nuage/altitude[attribute::min <= 2000]
-ou -> //altitude[attribute::min <= 2000]
-ou -> //altitude[@min <= 2000]
+-> //Nuage[altitude/attribute::min <= 2000]
+ou -> //Nuage[altitude/@min <= 2000]
 
 6. Sélectionne les nuages qui ont un différentiel supérieur ou égal à 6000 entre l’altitude minimale et l’altitude maximale.
--> /Nuages/Nuage/altitude[attribute::max - attribute::min >= 6000]
-ou -> //altitude[@max - @min >= 6000]
+-> /Nuages/Nuage[altitude/attribute::max - altitude/attribute::min >= 6000]
+ou -> //Nuage[altitude/@max - altitude/@min >= 6000]
 
 7. Sélectionne les nuages qui sont hydrométéores.
--> //hydrométéores[text() != "Aucun" or text() != "Aucun en général"]
+-> //Nuage[hydrométéores != "Aucun" or hydrométéores != "Aucun en général"]
+ou -> //Nuage[not(contains(hydrométéores, "Aucun"))]
 
 8. Sélectionne la deuxième espèce du troisième nuage.
--> /Nuages/Nuage[3]/espèce[2]/text()
+-> /Nuages/Nuage[3]/espèce[2]
+ou -> //Nuage[3]/espèce[2]
 
 9. Sélectionne toutes les espèces de nuages.
--> /Nuages/Nuage/nom/espèce/text()
+-> /Nuages/Nuage/nom/espèce
+ou -> //espèce
+ou -> //espèce[not(preceding::espèce = .)] --> enlève les doublons
 
 10. Sélectionne toutes les espèces de nuages dont le nom fini par is.
--> //nom[ends-with(., "is")]/espèce/text()
+-> //espece[substring(text(), string-length(text()) - 2, 2) = "is"]
+ou -> //espece[substring(., string-length(.) - 2, 2) = "is"]
 
 Soit <nom> cirrus </nom> le nœud courant (repérez-le dans le document XML).
 Trouver l’expression XPath qui à partir de ce nœud :
 11. sélectionne tous les noms de nuages
--> /nom/ancestor::Nuages//nom/text()
+-> ancestor::Nuages//nom/text()
+ou -> ../../..//nom/text()
 
 12. sélectionne les noms de nuages apparaissant après cirrus dans le document.
--> /nom/ancestor::Nuage//following-sibling::Nuage/nom/text()
-ou -> /nom/following//nom/text()
+-> ancestor::Nuage//following-sibling::Nuage/nom/text()
+ou -> following::nom/text()
 
 13. compte le nombre d’espèces de nuages spécifié dans les nuages apparaissant avant cirrus
--> count(/nom/ancestor::Nuage//preceding-sibling::Nuage/nom/espèce/text())
-ou -> count(/nom/preceding//nom/espèce/text())
+-> count(ancestor::Nuage//preceding-sibling::Nuage/nom/espèce)
+ou -> count(preceding::espèce)
