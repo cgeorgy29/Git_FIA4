@@ -1,0 +1,53 @@
+TD Xpath Nuages
+
+Trouver l’expression XPath qui :
+1. Sélectionne tous les noms de nuages.
+-> /Nuages/Nuage/nom/text()
+ou -> //nom/text()
+
+2. Compte le nombre de nuages présents dans le document.
+-> count(/Nuages/Nuage)
+ou -> count(//Nuage)
+
+3. Sélectionne tous les noms de nuages ayant pour espèce flocus.
+-> /Nuages/Nuage/nom[espèce = "flocus"]/text()
+ou -> //nom[espèce = "flocus"]/text()
+
+4. Compte le nombre de nuage étant de l’espèce flocus.
+-> count(/Nuages/Nuage/nom[espèce = "flocus"]) --> vrai mais récup le nom et pas nuage 
+ou -> count(/Nuages/Nuage[.//espèce = "flocus"]) --> plus proche de la consigne 
+ou -> count(//nom[espèce = "flocus"])
+
+5. Sélectionne les nuages dont l’altitude minimale est inférieure ou égale à 2000 mètres.
+-> /Nuages/Nuage/altitude[attribute::min <= 2000]
+ou -> //altitude[attribute::min <= 2000]
+ou -> //altitude[@min <= 2000]
+
+6. Sélectionne les nuages qui ont un différentiel supérieur ou égal à 6000 entre l’altitude minimale et l’altitude maximale.
+-> /Nuages/Nuage/altitude[attribute::max - attribute::min >= 6000]
+ou -> //altitude[@max - @min >= 6000]
+
+7. Sélectionne les nuages qui sont hydrométéores.
+-> //hydrométéores[text() != "Aucun" or text() != "Aucun en général"]
+
+8. Sélectionne la deuxième espèce du troisième nuage.
+-> /Nuages/Nuage[3]/espèce[2]/text()
+
+9. Sélectionne toutes les espèces de nuages.
+-> /Nuages/Nuage/nom/espèce/text()
+
+10. Sélectionne toutes les espèces de nuages dont le nom fini par is.
+-> //nom[ends-with(., "is")]/espèce/text()
+
+Soit <nom> cirrus </nom> le nœud courant (repérez-le dans le document XML).
+Trouver l’expression XPath qui à partir de ce nœud :
+11. sélectionne tous les noms de nuages
+-> /nom/ancestor::Nuages//nom/text()
+
+12. sélectionne les noms de nuages apparaissant après cirrus dans le document.
+-> /nom/ancestor::Nuage//following-sibling::Nuage/nom/text()
+ou -> /nom/following//nom/text()
+
+13. compte le nombre d’espèces de nuages spécifié dans les nuages apparaissant avant cirrus
+-> count(/nom/ancestor::Nuage//preceding-sibling::Nuage/nom/espèce/text())
+ou -> count(/nom/preceding//nom/espèce/text())
