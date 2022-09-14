@@ -1,5 +1,6 @@
 <nuages>
-    <nuage hydrometeore="oui">
+    <nuage>
+        <hydrometeore>oui</hydrometeore>
         <variete>Cumulonimbus</variete>
         <especes>
             <espece>calvus</espece>
@@ -11,7 +12,8 @@
             <max unite="m">18000</min>
         </altitudes>
     </nuage>
-    <nuage hydrometeore="non">
+    <nuage>
+        <hydrometeore>non</hydrometeore>
         <variete>Altocumulus</variete>
         <especes>
             <espece>calvus</espece>
@@ -25,3 +27,22 @@
         </altitudes>
     </nuage>
 </nuages>
+
+<!DOCTYPE nuages [
+    <!ELEMENT nuages (nuage)*>
+    <!ELEMENT nuage (hydrometeore, variete, especes, altitudes)>
+    <!ELEMENT hydrometeore (#PCDATA)>
+    <!ELEMENT variete (#PCDATA)>
+    <!ELEMENT especes (espece, espece, espece, espece)>
+    <!ELEMENT espece (#PCDATA)>
+    <!ELEMENT altitudes (#PCDATA)>
+    <!ELEMENT min (#PCDATA)>
+    <!ELEMENT max (#PCDATA)>
+    <!ATTLIST espece type #PCDATA>
+    <!ATTLIST 
+        min unite #PCDATA
+        max unite #PCDATA
+        unite (m | km) "m">
+
+    <!ATTLIST espece type CDATA #IMPLIED>
+]>
