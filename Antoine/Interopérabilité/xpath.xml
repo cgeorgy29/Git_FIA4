@@ -1,0 +1,48 @@
+1) tous les noms de nuages
+/child::nuages/child::nuage/child::nom/child::text()
+ou
+/nuages/nuage/nom/text()
+ou
+/descendant::nom/child::text()
+ou
+//nom/text()
+
+2) compte les nuages
+count(//nuage)
+
+3) sélectionne tous les nuages ayant pour espèce flocus
+//nom[espece="flocus"]/text()
+
+4) compte le nombre de nuages étant de l'espèce flocus
+count(//nuage[nom/espece="flocus"])
+
+5) sélectionne les nuages dont l'altitude minimale est inférieure ou égale à 2000 mètres
+//nuage[altitude/@min <= 2000]]
+
+6) sélectionne les nuages qui ont un différentiel supérieur ou égal à 6000 mètres entre l'altitude minimale et l'altitude maximale
+//nuage[altitude/@max - altitude/@min > 6000]
+
+7) sélectionne les nuages qui sont hydrométéores
+//nuage[hydrometeore != "Aucun" and hydrometeore != "Aucun en général"]
+
+8) sélectionne la deuxième espèce du troisième nuage
+//nuage[3]/espece[2]
+
+9) sélectionne toutes les espèces de nuage
+//nuage/espece
+
+10) sélectionne toutes les espèces de nuage dont le nom finit par is
+//nuage/espece[contains(text(),"is")]
+//espece[substring(.,string-length(.)-2,2)="is"]
+
+11) sélectionne tous les noms de nuages
+../../..//nom/text()
+ancestor::nuages//nom/text()
+
+12) sélectionne les noms de nuages apparaissant après cirrus dans le document
+following::nom/text()
+../../../following-sibling::nuage/nom/text()
+ancestor::nuage/nom/text()
+
+13) compte le nombre d'espèces de nuages spécifié dans les nuages apparaissant avant cirrus
+count(preceding::espece)
