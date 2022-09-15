@@ -1,0 +1,66 @@
+<!DOCTYPE films SYSTEM "filmographie.dtd">
+<films>
+    <film annéeSortie = "1994" NdeVisa ="">
+        <titre>FORREST GUMP</titre>
+        <exploitation>
+            <dateSortie>5 octobre 1995</dateSortie>
+            <nbEntrees>3 963 919</nbEntrees>
+            <nbSalles>334 </nbSalles>
+            <pays>
+                <nom>Belgique</nom>
+                <nom>Angleterre</nom>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur>
+                <nom>Hanks</nom>
+                <prenom>Tom</prenom>
+            </acteur>
+            <acteur>
+                <nom>Wright</nom>
+                <prenom>Robin</prenom>
+            </acteur>
+            <acteur>
+                <nom>Sinise</nom>
+                <prenom>Gary</prenom>
+            </acteur>
+            <acteur>
+                <nom>Filed</nom>
+                <prenom>Sally</prenom>
+            </acteur>
+        </acteurs>
+        <durée unité = "min">142 </durée>
+        <scénario>Né fin des années 40 dans une bourgade du Sud, Forrest Gump est affecté d'un quotient intellectuel inférieur à la moyenne. Il livre à qui veut l'entendre l'étrange récit de sa vie, lui qui aura tout vu et tout fait sans comprendre ce qui lui arrivait, traversant et bouleversant en parfait candide près d'un demi-siècle d'histoire américaine.</scénario>
+    </film>
+    <film annéeSortie = "1999" NdeVisa="">
+        <titre>La Ligne verte</titre>
+        <exploitation>
+            <dateSortie>1 Mars 2000</dateSortie>
+            <nbEntrees>1 714 080</nbEntrees>
+            <nbSalles></nbSalles>
+            <pays>
+                <nom>Belgique</nom>
+                <nom>Suisse</nom>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur>
+                <nom>Hanks</nom>
+                <prenom>Tom</prenom>
+            </acteur>
+            <acteur>
+                <nom>Morse</nom>
+                <prenom>David</prenom>
+            </acteur>
+            <acteur>
+                <nom>Duncan</nom>
+                <prenom>Michael Clarke</prenom>
+            </acteur>
+        </acteurs>
+        <durée unité = "min">188</durée>
+        <scénario></scénario>
+    </film>
+
+
+
+</films>
