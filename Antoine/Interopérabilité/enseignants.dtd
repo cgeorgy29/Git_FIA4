@@ -1,0 +1,9 @@
+<!ELEMENT enseignants (enseignant)* >
+<!ELEMENT enseignant (nom, prenom+, age?) >
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >
+<!ELEMENT age (#PCDATA) >
+<!ENTITY dep "ISIS" >
+<!ATTLIST enseignant
+dep CDATA #REQUIRED
+>
