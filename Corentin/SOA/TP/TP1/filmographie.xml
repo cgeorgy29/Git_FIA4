@@ -7,8 +7,8 @@
             <nbEntrees>3 963 919</nbEntrees>
             <nbSalles>334 </nbSalles>
             <pays>
-                <nom>Belgique</nom>
-                <nom>Angleterre</nom>
+                <nomPays>Belgique</nomPays>
+                <nomPays>Angleterre</nomPays>
             </pays>
         </exploitation>
         <acteurs>
@@ -39,8 +39,8 @@
             <nbEntrees>1 714 080</nbEntrees>
             <nbSalles></nbSalles>
             <pays>
-                <nom>Belgique</nom>
-                <nom>Suisse</nom>
+                <nomPays>Belgique</nomPays>
+                <nomPays>Suisse</nomPays>
             </pays>
         </exploitation>
         <acteurs>
@@ -60,7 +60,4 @@
         <durée unité = "min">188</durée>
         <scénario></scénario>
     </film>
-
-
-
 </films>
