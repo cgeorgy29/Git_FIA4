@@ -1,0 +1,8 @@
+(a) Sélectionne tous les noms de réalisateurs.
+//realisateur
+(b) Compte le nombre de films présents dans le document.
+count(//film)
+(c) Sélectionne le deuxième scénario de film.
+//film[2]/scenario
+(d) Sélectionne tous les réalisateurs ayant réalisé des films en 2011 (profitez-en pour mettre un des vos films
+comme ayant été réalisé en 2011 si ce n’est pas déjà le cas).
