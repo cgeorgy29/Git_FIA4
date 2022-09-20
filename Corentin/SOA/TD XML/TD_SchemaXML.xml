@@ -1,0 +1,27 @@
+<!-- EXO1 -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="nuages" type="NuagesType"/>
+    <xs:complexType name="NuagesType">
+        <xs:sequence>
+            <xs:element name="nuage" type="NuageType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="NuageType">
+        <xs:sequence>
+            <xs:element name="nom" type="NomType"/>
+            <xs:element name="altitude" type="AltitudeType"/>
+            <xs:element name="hydrometeores" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="NomType" mixed="true">
+        <xs:sequence>       
+            <xs:element name="espece" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AltitudeType">
+        <xs:sequence></xs:sequence>
+        <xs:attribute name="min" type="xs:int"/>
+        <xs:attribute name="max" type="xs:int"/>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,29 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="bulletin" type="bulletinType"/>
+    <xs:complexType name="bulletinType">
+        <xs:sequence>
+            <xs:element name="titre" type="titreType"/>
+            <xs:element name="corps" type="corpsType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="titreType" mixed="true">
+        <xs:sequence>
+            <xs:element name="loc" type="xs:string"/>
+            <xs:element name="heures" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="corpsType" mixed="true">
+        <xs:sequence>
+           <xs:element name="item" type="itemType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="itemType" mixed="true">
+        <xs:choice>            
+            <xs:element name="temp" type="xs:int"/>
+            <xs:element name="anemo" type="xs:float"/>
+            <xs:element name="pluie" type="xs:float"/>
+        </xs:choice>
+
+    </xs:complexType>
+
+</xs:schema>
