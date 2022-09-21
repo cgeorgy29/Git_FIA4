@@ -1,6 +1,8 @@
 <!ELEMENT films (film+)>
-<!ELEMENT film (titre, exploitation, acteurs, durée, scénario)>
+<!ELEMENT film (titre,genre, réalisateur, exploitation, acteurs, durée, scénario)>
 <!ELEMENT titre (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT réalisateur (#PCDATA)>
 <!ELEMENT exploitation (dateSortie, nbEntrees, nbSalles, pays)>
 <!ELEMENT dateSortie (#PCDATA)>
 <!ELEMENT nbEntrees (#PCDATA)>
