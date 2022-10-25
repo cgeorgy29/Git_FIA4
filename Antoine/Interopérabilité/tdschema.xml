@@ -1,0 +1,24 @@
+<nuages>
+    <nuage>
+        <nom>altocumulus
+            <espece>lenticularis</espece>
+            <espece>stratiformis</espece>
+            <espece>castellanus</espece>
+            <espece>flocus</espece>
+        </nom>
+        <altitude max="6000" min="2000"/>
+        <hydrometeores>Aucun.</hydrometeores>
+    </nuage>
+    <nuage>
+        <nom>cirrus
+            <espece>flocus</espece>
+            <espece>castellanus</espece>
+            <espece>spissatus</espece>
+            <espece>uncinus</espece>
+            <espece>fibratus</espece>
+        </nom>
+        <altitude max="12000" min="6000"/>
+        <hydrometeores>Aucun.</hydrometeores>
+    </nuage>
+</nuages>
+    

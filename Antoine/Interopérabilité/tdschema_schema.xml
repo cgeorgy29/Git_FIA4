@@ -1,0 +1,81 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="meteo" type="meteoType"/>
+<xs:complexType name="nuagesType">
+    <xs:sequence>
+        <xs:element name="nuage" type="nuageType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="nuageType">
+    <xs:sequence>
+        <xs:element name="nom" type="xs:string"/>
+        <xs:element name="altitude" type="xs:string"/>
+        <xs:element name="hydrometeore" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="nomType" mixed="True">
+    <xs:sequence>
+        <xs:element name="espece" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="altitudeType">
+    <xs:sequence></xs:sequence>
+    <xs:attribute name="min" type="xs:positiveInteger"></xs:attribute>
+    <xs:attribute name="max" type="xs:positiveInteger"></xs:attribute>
+</xs:complexType>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="bulletin" type="bulletinType" />
+<xs:complexType name="bulletinType">
+    <xs:sequence>
+        <xs:element name="titre" type="titreType"/>
+        <xs:element name="corps" type="corpsType"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="titreType" mixed="true">
+    <xs:sequence>
+        <xs:element name="loc" type="xs:string"/>
+        <xs:element name="heures" type="heureType"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="heureType">
+    <xs:restriction base="xs:positiveInteger">
+        <xs:maxInclusive value="24"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="corpsType">
+    <xs:sequence>
+        <xs:element name="item" type="itemType" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="itemType" mixed="true">
+    <xs:choice>
+        <xs:element name="anemo" type="anemoType"/>
+        <xs:element name="pluvio" type="tempType"/>
+        <xs:element name="temp" type="tempType"/>
+    </xs:choice>
+</xs:complexType>
+
+<xs:simpleType name="anemoType">
+    <xs:restriction base="xs:positiveInteger">
+        <xs:maxInclusive value="100"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="pluvioType">
+    <xs:restriction base="xs:positiveInteger">
+        <xs:maxInclusive value="50"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tempType">
+    <xs:restriction base="xs:positiveInteger">
+        <xs:minInclusive value="-50"/>
+        <xs:maxInclusive value="50"/>
+    </xs:restriction>
+</xs:simpleType>
