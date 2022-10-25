@@ -1,0 +1,37 @@
+(a) Sélectionne tous les noms de r ́ealisateurs.
+--> //réalisateur
+(b) Compte le nombre de films pr ́esents dans le document.
+--> count(//film)
+(c) Sélectionne le deuxi`eme sc ́enario de film.
+--> //film[2]/scénario
+(d) Sélectionne tous les r ́ealisateurs ayant r ́ealis ́e des films en 2011 (profitez-en pour mettre un des vos films
+comme ayant  ́et ́e r ́ealis ́e en 2011 si ce n’est pas d ́ej`a le cas).
+--> //film[@annéeSortie=2011]/réalisateur
+(e) Compte le nombre de films ayant r ́ealis ́es au moins 1 million d’entr ́ees.
+--> count(//film[exploitation/nbEntrees>1000000])
+(f) Sélectionne les films ayant r ́ealis ́es au moins 1 million d’entr ́ees et  ́etant sortis dans au moins 400 salles.
+--> //film[exploitation/nbEntrees>1000000 and exploitation/nbSalles>400]
+(g) Sélectionne tous les films sortis dans plus de deux pays europ ́eens diff ́erents (en plus de la France)
+--> //film[count(exploitation/pays/nomPays)>2]
+(h) Sélectionne tous les sc ́enarios dont la longueur est sup ́erieure `a 200 caract`eres.
+--> //scénario[string-length(.)>200]
+(i) Sélectionne tous les films sortis en Allemagne.
+--> //film[exploitation/pays/nomPays="Allemagne"]
+(j) Sélectionne tous les films sortis en Allemagne ou en Angleterre.
+--> //film[exploitation/pays/nomPays="Allemagne" or exploitation/pays/nomPays="Angleterre"]
+(k) Sélectionne tous les visas de films. (visa est un attribut de film)
+--> //film/@Ndevisa
+(l) Sélectionne les titres de films dont le nombre d’acteurs est sup ́erieur `a trois.
+--> //film[count(acteurs/acteur)>3]/titre
+(m) Sélectionne les titres de films dont la dur ́ee est inf ́erieure `a deux heures.
+--> //film[durée&lt;120]/titre
+(n) Sélectionne le deuxi`eme acteur du troisi`eme film.
+--> //film[3]/acteurs/acteur[2]
+(o) Sélectionne tous les films sortis un mercredi
+
+(p) Sélectionne tous les acteurs dont le nom fini par on.
+--> //acteur[nom[substring(., string-length(.) - 1, 2) = 'on']]
+(q) Sélectionne le titre des films qui sont sortis en salle en 2011.
+--> //film[exploitation/nbSalles>0 and @annéeSortie=2011]/titre
+(r) Sélectionne tous les films sortis `a la fois en Allemagne et en Angleterre.
+--> //film[exploitation/pays/nomPays="Allemagne" and exploitation/pays/nomPays="Angleterre"]

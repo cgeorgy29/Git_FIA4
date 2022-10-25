@@ -1,1 +1,20 @@
-<!ELEMENT 
+<!ELEMENT films (film+)>
+<!ELEMENT film (titre,genre, réalisateur, exploitation, acteurs, durée, scénario)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT réalisateur (#PCDATA)>
+<!ELEMENT exploitation (dateSortie, nbEntrees, nbSalles, pays)>
+<!ELEMENT dateSortie (#PCDATA)>
+<!ELEMENT nbEntrees (#PCDATA)>
+<!ELEMENT nbSalles (#PCDATA)>
+<!ELEMENT pays (nomPays+)>
+<!ELEMENT nomPays (#PCDATA)>
+<!ELEMENT acteurs (acteur+)>
+<!ELEMENT acteur (nom, prenom)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT durée (#PCDATA)>
+<!ELEMENT scénario (#PCDATA)>
+<!ATTLIST film annéeSortie CDATA #REQUIRED>
+<!ATTLIST film NdeVisa CDATA #IMPLIED>
+<!ATTLIST durée unité CDATA #REQUIRED>
