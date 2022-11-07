@@ -1,0 +1,53 @@
+<!-- Exercice 1 -->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template match="/recette">
+        <html>
+            <head>
+                <title>
+                    <xsl:value-of select="entete/titre"/>
+                </title>
+            </head>
+            <body>
+                <h1> <xsl:value-of select="entete/titre"/></h1>
+                <h2> <xsl:value-of select="entente/auteur"/></h2>
+                <h3> Remarque : <xsl:value-of select="entete/remarque"/></h3>
+                <h2> Procédure :</h2>
+                <p><xsl:value-of select="procedure"/></p>
+            </body>
+        </html>
+    </xsl:template>
+    
+<!-- Exercice 2 -->
+    <xsl:template match="bouteille">
+        <h1> Bouteille de marque <xsl:value-of select="marque"/></h1>
+        <h2> Liste des ions contenus avec leur quantité </h2>
+        <xsl:apply-templates select="composition/ion"/>
+        <h2> Lieu d'origine : </h2>
+        <p> Ville <xsl:value-of select="source/ville"/>, dans le département <xsl:value-of select="source/departement"/></p>
+        <h2> Autres informations : </h2>
+        <ul>
+            <li>
+                Contenance : <xsl:value-of select="contenance"/>
+            </li>
+            <li>
+                pH : <xsl:value-of select="ph"/>
+            </li>
+        </ul>
+    </xsl:template>
+    <xsl:template match="ion">
+        <ul>
+            <li><xsl:value-of select="text()"/> (<xsl:value-of select="quantité"/>)</li>
+        </ul>
+    </xsl:template>
+
+<!-- Bonus -->
+    <xsl:template match="/bouteilles">
+        <html>
+            <body>
+                <h1>Liste de bouteilles :</h1>
+                <xsl:apply-template select="bouteille"/>
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>
