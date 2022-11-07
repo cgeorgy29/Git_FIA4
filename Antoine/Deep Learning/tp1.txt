@@ -1,0 +1,15 @@
+## 1.1 La notion de densité
+
+    a) Un dataframe est un tableau à doubles entrées permettant de manipuler des données
+    b) Int, String, String, Float, String, String, Float, Float, Float, Float, Float
+    c) La moyenne de la fonction describe() est arrondie par rapport à la moyenne de la fonction mean()
+    e) Dans le top 5, le genre sports est le plus représenté mais en pratique, c'est le genre "Action" qui est le plus récurrent
+    f) A priori, c'est l'amérique du nord qui a obtenu les meilleures ventes
+    g) Les jeux étant sortis à des dates très différentes, la différence d'âge peut avoir un impact sur les ventes
+
+## 1.2 La variance
+
+    a) L'année 2006 se démarque des autres, à cause de la sortie de Wii Sports (2006)
+    b) Pour des fonctions statistiques, une valeur extrême peut fausser la valeur de la moyenne
+
+## 1.3 Un modèle dit "gaussien"
