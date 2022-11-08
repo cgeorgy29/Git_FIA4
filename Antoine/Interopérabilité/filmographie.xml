@@ -1,7 +1,7 @@
 <!DOCTYPE films SYSTEM "filmographie.dtd" >
 
 <films>
-    <film annee="2005" visa="114089">
+    <film annee="2011" visa="114089">
         <titre>King Kong</titre>
         <duree unite="minutes">188</duree>
         <nationalite>Americain</nationalite>
@@ -56,7 +56,7 @@
         <exploitation>
             <datesortie>09/09/2022</datesortie>
             <nbsalles>591</nbsalles>
-            <nbentrees>1139622</nbentrees>
+            <nbentrees>139622</nbentrees>
             <pays>
                 <nom>Japon</nom>
                 <nom>Chine</nom>
@@ -91,7 +91,7 @@
             </pays>
         </exploitation>
     </film>
-    <film annee="2022" visa="">
+    <film annee="2011" visa="">
         <titre>Beast</titre>
         <duree unite="minutes">93</duree>
         <nationalite>Americain</nationalite>

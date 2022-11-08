@@ -1,0 +1,18 @@
+a) //realisateur
+b) count(//films/film)
+c) //films/film[2]
+d) //films/film[@annee=2011]/realisateur
+e) count(//nbentrees/text()[.&gt;1000000])
+f) //film[exploitation/nbentrees/text()>1000000 and exploitation/nbsalles>400]
+g) //film[count(exploitation/pays/nom) >2]
+h) //film[string-length(scenario)>200]
+i) //film[exploitation/pays/nom = 'Allemagne']
+j) //film[exploitation/pays/nom = 'Allemagne' or exploitation/pays/nom = 'Angleterre']
+k) //@visa
+l) //film[count(acteurs/acteur) &gt; 3]/titre
+m) //film[duree &lt; 120]/titre
+n) //films/film[3]/acteurs/acteur[2]
+o) La façon dont a été conçue la structure ne permet pas de sélectionner par jour de la semaine
+p) //films/film/acteurs/acteur[@nom[contains(.,'on')]]
+q) //films/film[@annee=2011]/titre
+r) //film[exploitation/pays/nom = 'Allemagne' and exploitation/pays/nom = 'Angleterre']
