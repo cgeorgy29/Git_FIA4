@@ -13,3 +13,26 @@
     b) Pour des fonctions statistiques, une valeur extrême peut fausser la valeur de la moyenne
 
 ## 1.3 Un modèle dit "gaussien"
+
+    a) On doit la découverte de la variance au mathématicien Ronald Fisher
+    b) L'écart-type permet de voir si la répartition des notes est centrée autour de la médiane ou si elle est dispersée
+    c) La variance permet de tenir compte de toute la dispersion
+    a) La variance des jeux de type action est égale à 1.337 environ
+    b) La variance des jeux de type sports est égale à 4.365 environ, elle est environ quatre fois plus élevée que le type action
+
+## 1.4 Time to decide
+
+    a) L'hypothèse que les jeux d'aventures suivent une loi normale est rejetée (pvalue=0.0)
+    b) L'hypothèse que les jeux de stratégie suivent une loi nomrale est rejetée (pvalue=1.82e-41)
+    c) Les ventes de Aventure et Stratégie ne suivent pas la loi normale
+    d) Les logs indiquent que les résultats ne sont pas précis pour un N supérieur à 5000
+    e) La p-value² est égale à 0.0
+    f) Global Sales ne suit pas une loi normale
+
+    a)
+    b) Le genre Adventure n'a pas été bien vendu
+    c) Le genre Plateforme a été le mieux vendu
+    d) Le jeu qui a été le mieux vendu (Wii Sports) ne fait pas partie du genre le plus populaire.
+    e) Les jeux de stratégie n'ont pas été bien vendus depuis 2014
+    g) Les jeux Shooter sont les mieux vendus depuis 2014
+    h) Il serait pertinent d'aller vers les jeux Shooter
