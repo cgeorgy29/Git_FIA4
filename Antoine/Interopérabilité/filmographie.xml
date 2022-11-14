@@ -1,5 +1,3 @@
-<!DOCTYPE films SYSTEM "filmographie.dtd" >
-
 <films>
     <film annee="2011" visa="114089">
         <titre>King Kong</titre>
@@ -10,15 +8,12 @@
         </genres>
         <realisateur>Peter Jackson</realisateur>
         <acteurs>
-            <acteur nom="Peter" prenom="Jackson"></acteur>
-            <acteur nom="Watts" prenom="Naomi"></acteur>
-            <acteur nom="Black" prenom="Jack"></acteur>
-            <acteur nom="Brody" prenom="Adrien"></acteur>
+            <acteur ref="1"/>
         </acteurs>
-        <scenario><![CDATA[
-            New York, 1933. Artiste de music-hall à la rue, Ann Darrow rencontre l'audacieux explorateur/réalisateur Carl Denham. 
+        <scenario>
+            <keyword>New York, 1933.</keyword> Artiste de music-hall à la rue, <personnage>Ann Darrow</personnage> rencontre l'audacieux explorateur/réalisateur <personnage>Carl Denham.</personnage> 
             Ce dernier rêve de terminer son film inachevé, mais nourrit surtout la folle ambition d'être le premier à découvrir 
-            le secret de la mystérieuse Skull Island. Il va entraîner Ann dans sa périlleuse aventure....]]>
+            le secret de la mystérieuse Skull Island. <ev>Il va entraîner Ann dans sa périlleuse aventure....</ev>
         </scenario>
         <exploitation>
             <datesortie>Mercredi 14 décembre 2005</datesortie>
@@ -30,6 +25,7 @@
                 <nom>Chine</nom>
             </pays>
         </exploitation>
+        <image href="./kingkong.jpg"/>
     </film>
     <film annee="2022" visa="">
         <titre>Fall</titre>
@@ -40,18 +36,14 @@
         </genres>
         <realisateur></realisateur>
         <acteurs>
-            <acteur nom="Currey" prenom="Grace Caroline"></acteur>
-            <acteur nom="Fraser" prenom="Brendan"></acteur>
-            <acteur nom="Dean" prenom="Jeffrey"></acteur>
-            <acteur nom="Gooding" prenom="Mason"></acteur>
-            <acteur nom="Sink" prenom="Sadie"></acteur>
-            <acteur nom="Simpkins" prenom="Ty"></acteur>
+            <acteur ref="2"/>
+            <acteur ref="3"/>
         </acteurs>
-        <scenario><![CDATA[
-            Pour les meilleurs amis Becky et Hunter, la vie consiste à vaincre ses peurs et à repousser ses limites. 
-            Mais après avoir grimpé à 2 000 pieds au sommet d'une tour de radio isolée et abandonnée, ils se retrouvent bloqués sans aucun moyen de descendre.
-            Maintenant, les compétences expertes en escalade de Becky et Hunter seront mises à l'épreuve ultime alors qu'ils se battent désespérément pour survivre aux éléments,
-            au manque de fournitures et aux hauteurs vertigineuses. ]]>
+        <scenario>
+            Pour les meilleurs amis <personnage>Becky</personnage> et <personnage>Hunter</personnage>, la vie consiste à vaincre ses peurs et à repousser ses limites. 
+            Mais après avoir grimpé à <keyword>2 000 pieds au sommet d'une tour de radio</keyword> isolée et abandonnée, ils se retrouvent bloqués sans aucun moyen de descendre.
+            Maintenant, les compétences expertes en escalade de Becky et Hunter seront mises à l'épreuve ultime alors qu'<ev>ils se battent désespérément pour survivre aux éléments,
+            au manque de fournitures et aux hauteurs vertigineuses.</ev>
         </scenario>
         <exploitation>
             <datesortie>09/09/2022</datesortie>
@@ -62,6 +54,7 @@
                 <nom>Chine</nom>
             </pays>
         </exploitation>
+        <image href="./fall.jpg"/>
     </film>
     <film annee="2022" visa="">
         <titre>The Whale</titre>
@@ -72,13 +65,13 @@
         </genres>
         <realisateur>Darren Aronofsky</realisateur>
         <acteurs>
-            <acteur nom="Fraser" prenom="Brendan"></acteur>
-            <acteur nom="Sink" prenom="Sadie"></acteur>
-            <acteur nom="Simpkins" prenom="Ty"></acteur>
+            <acteur ref="2"/>
+            <acteur ref="3"/>
+            <acteur ref="4"/>
         </acteurs>
-        <scenario><![CDATA[
-            Charlie, professeur d'anglais reclus souffrant d'obésité, tente de renouer avec sa fille adolescente 
-            pour une ultime chance de rédemption.]]>
+        <scenario>
+            <personnage>Charlie</personnage>, <keyword>professeur d'anglais reclus souffrant d'obésité</keyword>, <ev>tente de renouer avec sa fille adolescente 
+            pour une ultime chance de rédemption.</ev>
         </scenario>
         <exploitation>
             <datesortie>22/02/2023</datesortie>
@@ -90,6 +83,7 @@
                 <nom>Italie</nom>
             </pays>
         </exploitation>
+        <image href="./fall.jpg"/>
     </film>
     <film annee="2011" visa="">
         <titre>Beast</titre>
@@ -101,15 +95,16 @@
         </genres>
         <realisateur>Baltasar Kormákur</realisateur>
         <acteurs>
-            <acteur nom="Elba" prenom="Idris"></acteur>
+            <acteur ref="1"/>
+            <acteur ref="4"/>
         </acteurs>
-        <scenario><![CDATA[
-            Le Dr. Nate Daniels, revient en Afrique du Sud, où il a autrefois rencontré sa femme aujourd’hui décédée, 
+        <scenario>
+            Le <personnage>Dr. Nate Daniels</personnage>, revient en Afrique du Sud, où il a autrefois rencontré sa femme aujourd’hui décédée, 
             pour y passer des vacances prévues de longue date avec ses deux filles dans une réserve naturelle, 
-            tenue par Martin Battles, un vieil ami de la famille, biologiste spécialiste de la vie sauvage. 
-            Mais ce repos salvateur va se transformer en épreuve de survie quand un lion assoiffé de vengeance, 
+            tenue par <personnage>Martin Battles</personnage>, un vieil ami de la famille, biologiste spécialiste de la vie sauvage. 
+            Mais <ev>ce repos salvateur va se transformer en épreuve de survie quand un lion assoiffé de vengeance, 
             unique rescapé de la traque sanguinaire d’ignobles braconniers, se met à dévorer tout humain sur sa route 
-            et prend en chasse le docteur et sa famille.]]>
+            et prend en chasse le docteur et sa famille.</ev>
         </scenario>
         <exploitation>
             <datesortie>22/02/2023</datesortie>
@@ -120,5 +115,33 @@
                 <nom>Chine</nom>
             </pays>
         </exploitation>
+        <image href="./fall.jpg"/>
     </film>
+    <acteurs>
+        <acteurDescription id="1">
+            <nom>Jackson</nom>
+            <prenom>Peter</prenom>
+            <dateNaissance>01/01/1970</dateNaissance>
+            <sexe>M</sexe>
+        </acteurDescription>
+        <acteurDescription id="2">
+            <nom>Simpkins</nom>
+            <prenom>Ty</prenom>
+            <dateNaissance>01/01/1990</dateNaissance>
+            <sexe>M</sexe>
+        </acteurDescription>
+        <acteurDescription id="3">
+            <nom>Fraser</nom>
+            <prenom>Brendan</prenom>
+            <dateNaissance>01/01/1980</dateNaissance>
+            <sexe>M</sexe>
+        </acteurDescription>
+        <acteurDescription id="4">
+            <nom>Sink</nom>
+            <prenom>Sadie</prenom>
+            <dateNaissance>01/01/1985</dateNaissance>
+            <sexe>F</sexe>
+        </acteurDescription>
+
+    </acteurs>
 </films>
