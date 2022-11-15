@@ -123,24 +123,28 @@
             <prenom>Peter</prenom>
             <dateNaissance>01/01/1970</dateNaissance>
             <sexe>M</sexe>
+            <lieuNaissance>New York</lieuNaissance>
         </acteurDescription>
         <acteurDescription id="2">
             <nom>Simpkins</nom>
             <prenom>Ty</prenom>
             <dateNaissance>01/01/1990</dateNaissance>
             <sexe>M</sexe>
+            <lieuNaissance>Portland</lieuNaissance>
         </acteurDescription>
         <acteurDescription id="3">
             <nom>Fraser</nom>
             <prenom>Brendan</prenom>
             <dateNaissance>01/01/1980</dateNaissance>
             <sexe>M</sexe>
+            <lieuNaissance>Baltimore</lieuNaissance>
         </acteurDescription>
         <acteurDescription id="4">
             <nom>Sink</nom>
             <prenom>Sadie</prenom>
             <dateNaissance>01/01/1985</dateNaissance>
             <sexe>F</sexe>
+            <lieuNaissance>Des Moines</lieuNaissance>
         </acteurDescription>
 
     </acteurs>
