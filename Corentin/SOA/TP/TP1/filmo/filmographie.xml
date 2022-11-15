@@ -1,0 +1,208 @@
+<!--<!DOCTYPE films SYSTEM "filmographie.dtd"> -->
+
+<films
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="filmographie_schema.xsd">
+    <film annéeSortie = "1994" NdeVisa ="75423">
+        <titre>FORREST GUMP</titre>
+        <genre>Comédie-Dramatique</genre>
+        <réalisateur>Robert Zemeckis</réalisateur>
+        <exploitation>
+            <dateSortie>1995-10-05</dateSortie>
+            <nbEntrees>3963919</nbEntrees>
+            <nbSalles>334 </nbSalles>
+            <pays>
+                <nomPays>Belgique</nomPays>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="1"> Tom Hanks </acteur>
+            <acteur ref="2"> Robin Wright </acteur>
+            <acteur ref="3"> Gary Sinise </acteur>
+            <acteur ref="4"> Sally Field </acteur>
+        </acteurs>
+        <durée unité = "min">142 </durée>
+        <scénario>Né fin des années <keyword>40 dans une bourgade du Sud</keyword>, <personnage>Forrest Gump</personnage> est affecté d'un quotient intellectuel inférieur à la moyenne. Il livre à qui veut l'entendre l'étrange récit de sa vie, lui qui aura tout vu et tout fait sans comprendre ce qui lui arrivait, traversant et bouleversant en parfait candide près d'un demi-siècle d'histoire américaine.</scénario>
+    <image ref="ForrestGump.jpg"></image>
+    </film>
+    <film annéeSortie = "1999" NdeVisa="86423">
+        <titre>La Ligne verte</titre>
+        <genre>Drame</genre>
+        <réalisateur>Franl Darabont</réalisateur>
+        <exploitation>
+            <dateSortie>2000-03-01</dateSortie>
+            <nbEntrees>1714080</nbEntrees>
+            <nbSalles>374</nbSalles>
+            <pays>
+                <nomPays>Belgique</nomPays>
+                <nomPays>Suisse</nomPays>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="1">Tom Hanks</acteur>
+            <acteur ref="5">Michael Clarke Duncan</acteur>
+            <acteur ref="6">David Morse</acteur>
+        </acteurs>
+        <durée unité = "min">188</durée>
+        <scénario> <personnage>Paul Edgecomb</personnage>,  <ev>pensionnaire</ev> d'une maison de retraite, est hanté par ses souvenirs. Gardien-chef du pénitencier de Cold Mountain, en 1935, en Louisiane, il était chargé de veiller au bon déroulement des exécutions capitales au bloc E (la ligne verte) en s'efforçant d'adoucir les derniers moments des condamnés. Parmi eux se trouvait un colosse du nom de John Coffey, accusé du viol et du meurtre de deux fillettes.
+        </scénario>
+        <image ref="LaLigneVerte.jpg"></image>
+    </film>
+    <film annéeSortie = "1986" NdeVisa="62200">
+        <titre>Top Gun</titre>
+        <genre>Action</genre>
+        <réalisateur>Tony Scott</réalisateur>
+        <exploitation>
+            <dateSortie>1986-09-17</dateSortie>
+            <nbEntrees>3570719</nbEntrees>
+            <nbSalles>453</nbSalles>
+            <pays>
+                <nomPays>Royaume-Uni</nomPays>
+                <nomPays>Suisse</nomPays>
+                <nomPays>Belgique</nomPays>
+                <nomPays>Luxembourg</nomPays>
+                <nomPays>Espagne</nomPays>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="7"> Tom Cruise</acteur>
+            <acteur ref="8"> McGillis Kelly</acteur>
+        </acteurs>
+        <durée unité = "min">110</durée>
+        <scénario><keyword>Jeune as du pilotage</keyword>  et <ev>tête brulée </ev> d'une école réservée à l'élite de l'aéronavale US ("Top Gun"), <personnage>Pete Mitchell, dit "Maverick"</personnage> , tombe sous le charme d'une instructrice alors qu'il est en compétition pour le titre de meilleur pilote...</scénario>
+    <image ref="TopGun.jpg"/>
+    </film>
+    <film annéeSortie = "2009" NdeVisa="102548">
+        <titre>Avatar</titre>
+        <genre>Science-Fiction</genre>
+        <réalisateur>James Cameron</réalisateur>
+        <exploitation>
+            <dateSortie>2009-12-16</dateSortie>
+            <nbEntrees>14775990</nbEntrees>
+            <nbSalles>14604</nbSalles>
+            <pays>
+                <nomPays>Irlande</nomPays>
+                <nomPays>Pays-Bas</nomPays>
+                <nomPays>Italie</nomPays>
+                <nomPays>Espagne</nomPays>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="9">Sam Worthington</acteur>
+            <acteur ref="10">Zoe Saldana</acteur>
+            <acteur ref="11">Sigourney Weaver</acteur>
+        </acteurs>
+        <durée unité = "min">162</durée>
+        <scénario>Sur le monde extraterrestre luxuriant de Pandora vivent les Na'vi, des êtres qui semblent primitifs, mais qui sont très évolués. Jake Sully, un ancien Marine paralysé, redevient mobile grâce à un tel Avatar et tombe amoureux d'une femme Na'vi. Alors qu'un lien avec elle grandit, il est entraîné dans une bataille pour la survie de son monde.
+        </scénario>
+        <image ref="Avatar.jpg"/>
+    </film>
+    <film annéeSortie = "2011" NdeVisa ="152368">
+        <titre>Drive</titre>
+        <genre>Thriller</genre>
+        <réalisateur>Nicolas Winding Refn</réalisateur>
+        <exploitation>
+            <dateSortie>2011-10-05</dateSortie>
+            <nbEntrees>13536945</nbEntrees>
+            <nbSalles>4235</nbSalles>
+            <pays>
+                <nomPays>Allemagne</nomPays>
+                <nomPays>Espagne</nomPays>
+                <nomPays>Italie</nomPays>
+                <nomPays>Royaume-Uni</nomPays>
+            </pays>
+        </exploitation>
+        <acteurs>
+            <acteur ref="12">Ryan Gosling</acteur>
+            <acteur ref="13">Carey Mulligan</acteur>
+            <acteur ref="14">Bryan Cranston</acteur>
+        </acteurs>
+        <durée unité = "min">95 </durée>
+        <scénario>Né fin des années 40 dans une bourgade du Sud, Forrest Gump est affecté d'un quotient intellectuel inférieur à la moyenne. Il livre à qui veut l'entendre l'étrange récit de sa vie, lui qui aura tout vu et tout fait sans comprendre ce qui lui arrivait, traversant et bouleversant en parfait candide près d'un demi-siècle d'histoire américaine.</scénario>
+        <image ref="Drive.jpg"/>
+    </film>
+    <acteurDescription id="1" lieuNaissance="Concord">
+        <nom>Hanks</nom>
+        <prenom>Tom</prenom>
+        <dateNaissance>1956-07-09</dateNaissance>
+        <sexe >M</sexe>
+    </acteurDescription>
+    <acteurDescription id="2" lieuNaissance="Dallas">
+        <nom>Wright</nom>
+        <prenom>Robin</prenom>
+        <dateNaissance>1966-04-08</dateNaissance>
+        <sexe >F</sexe>
+    </acteurDescription>
+    <acteurDescription id="3" lieuNaissance="Blue Island">
+        <nom>Sinise</nom>
+        <prenom>Garry</prenom>
+        <dateNaissance>1955-03-17</dateNaissance>
+        <sexe >M</sexe>
+    </acteurDescription>
+    <acteurDescription id="4" lieuNaissance="Pasadena">
+        <nom>Field</nom>
+        <prenom>Sally</prenom>
+        <dateNaissance>1966-11-06</dateNaissance>
+        <sexe >F</sexe>
+    </acteurDescription>
+    <acteurDescription id="5" lieuNaissance="Chicago">
+        <nom>Duncan</nom>
+        <prenom>Michael Clarke</prenom>
+        <dateNaissance>1957-09-10</dateNaissance>
+        <sexe >M</sexe>
+    </acteurDescription>
+    <acteurDescription id="6" lieuNaissance="Hamilton">
+        <nom>Morse</nom>
+        <prenom>David</prenom>
+        <dateNaissance>1953-09-30</dateNaissance>
+        <sexe >M</sexe>
+    </acteurDescription>
+    <acteurDescription id="7" lieuNaissance="Syracuse">
+        <nom>Cruise</nom>
+        <prenom>Tom</prenom>
+        <dateNaissance>1962-07-03</dateNaissance>
+        <sexe >M</sexe>
+    </acteurDescription>
+    <acteurDescription id="8" lieuNaissance="">
+        <nom>McGillis</nom>
+        <prenom>Kelly</prenom>
+        <dateNaissance>1957-11-09</dateNaissance>
+        <sexe>F</sexe>
+    </acteurDescription>
+    <acteurDescription id="9" lieuNaissance="Worthington">
+        <nom>Sam</nom>
+        <prenom>Worthington</prenom>
+        <dateNaissance>1976-08-02</dateNaissance>
+        <sexe >M</sexe>
+    </acteurDescription>
+    <acteurDescription id="10" lieuNaissance="New York">
+        <nom>Saldana</nom>
+        <prenom>Zoe</prenom>
+        <dateNaissance>1978-06-19</dateNaissance>
+        <sexe >F</sexe>
+    </acteurDescription>
+    <acteurDescription id="11" lieuNaissance="New York">
+        <nom>Weaver</nom>
+        <prenom>Sigourney</prenom>
+        <dateNaissance>1949-10-08</dateNaissance>
+        <sexe >F</sexe>
+    </acteurDescription>
+    <acteurDescription id="12" lieuNaissance="Vancouver">
+        <nom>Gosling</nom>
+        <prenom>Ryan</prenom>
+        <dateNaissance>1980-11-12</dateNaissance>
+        <sexe >M</sexe>
+    </acteurDescription>
+    <acteurDescription id="13" lieuNaissance="London">
+        <nom>Mulligan</nom>
+        <prenom>Carey</prenom>
+        <dateNaissance>1985-05-28</dateNaissance>
+        <sexe >F</sexe>
+    </acteurDescription>
+    <acteurDescription id="14" lieuNaissance="Canton">
+        <nom>Cranston</nom>
+        <prenom>Bryan</prenom>
+        <dateNaissance>1956-03-07</dateNaissance>
+        <sexe >M</sexe>
+    </acteurDescription>
+</films>
