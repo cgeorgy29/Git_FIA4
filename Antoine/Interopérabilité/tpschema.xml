@@ -67,6 +67,8 @@
         <xs:sequence>
         </xs:sequence>
         <xs:attribute name="ref" type="xs:string"/>
+        <xs:attribute name="nom" type="xs:string"/>
+        <xs:attribute name="prenom" type="xs:string"/>
     </xs:complexType>
     <xs:complexType name="scenarioType" mixed="true">
         <xs:choice maxOccurs="unbounded">
