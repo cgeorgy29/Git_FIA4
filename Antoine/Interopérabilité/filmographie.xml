@@ -1,3 +1,4 @@
+<?xml-stylesheet href="filmographie.xsl" type="text/xsl" ?>
 <films>
     <film annee="2011" visa="114089">
         <titre>King Kong</titre>
@@ -8,7 +9,7 @@
         </genres>
         <realisateur>Peter Jackson</realisateur>
         <acteurs>
-            <acteur ref="1"/>
+            <acteur ref="1" nom="Jackson" prenom="Peter"/>
         </acteurs>
         <scenario>
             <keyword>New York, 1933.</keyword> Artiste de music-hall à la rue, <personnage>Ann Darrow</personnage> rencontre l'audacieux explorateur/réalisateur <personnage>Carl Denham.</personnage> 
@@ -34,10 +35,10 @@
         <genres>
             <genre>Thriller</genre>
         </genres>
-        <realisateur></realisateur>
+        <realisateur>Scott Mann</realisateur>
         <acteurs>
-            <acteur ref="2"/>
-            <acteur ref="3"/>
+            <acteur ref="2" nom="Simpkins" prenom="Ty"/>
+            <acteur ref="3" nom="Fraser" prenom="Brendan"/>
         </acteurs>
         <scenario>
             Pour les meilleurs amis <personnage>Becky</personnage> et <personnage>Hunter</personnage>, la vie consiste à vaincre ses peurs et à repousser ses limites. 
@@ -56,7 +57,7 @@
         </exploitation>
         <image href="./fall.jpg"/>
     </film>
-    <film annee="2022" visa="">
+    <film annee="2006" visa="">
         <titre>The Whale</titre>
         <duree unite="minutes">117</duree>
         <nationalite>Americain</nationalite>
@@ -65,9 +66,9 @@
         </genres>
         <realisateur>Darren Aronofsky</realisateur>
         <acteurs>
-            <acteur ref="2"/>
-            <acteur ref="3"/>
-            <acteur ref="4"/>
+            <acteur ref="2" nom="Simpkins" prenom="Ty"/>
+            <acteur ref="3" nom="Fraser" prenom="Brendan"/>
+            <acteur ref="4" nom="Sink" prenom="Sadie"/>
         </acteurs>
         <scenario>
             <personnage>Charlie</personnage>, <keyword>professeur d'anglais reclus souffrant d'obésité</keyword>, <ev>tente de renouer avec sa fille adolescente 
@@ -85,7 +86,7 @@
         </exploitation>
         <image href="./fall.jpg"/>
     </film>
-    <film annee="2011" visa="">
+    <film annee="2006" visa="">
         <titre>Beast</titre>
         <duree unite="minutes">93</duree>
         <nationalite>Americain</nationalite>
@@ -95,8 +96,8 @@
         </genres>
         <realisateur>Baltasar Kormákur</realisateur>
         <acteurs>
-            <acteur ref="1"/>
-            <acteur ref="4"/>
+            <acteur ref="1" nom="Jackson" prenom="Peter"/>
+            <acteur ref="4" nom="Sink" prenom="Sadie"/>
         </acteurs>
         <scenario>
             Le <personnage>Dr. Nate Daniels</personnage>, revient en Afrique du Sud, où il a autrefois rencontré sa femme aujourd’hui décédée, 
