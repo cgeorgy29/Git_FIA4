@@ -1,5 +1,5 @@
 <!--<!DOCTYPE films SYSTEM "filmographie.dtd"> -->
-
+<?xml-stylesheet href="filmographie.xsl" type="text/xsl"?>
 <films
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="filmographie_schema.xsd">
@@ -54,7 +54,7 @@ xsi:noNamespaceSchemaLocation="filmographie_schema.xsd">
         <réalisateur>Tony Scott</réalisateur>
         <exploitation>
             <dateSortie>1986-09-17</dateSortie>
-            <nbEntrees>3570719</nbEntrees>
+            <nbEntrees>350070719</nbEntrees>
             <nbSalles>453</nbSalles>
             <pays>
                 <nomPays>Royaume-Uni</nomPays>
@@ -97,12 +97,12 @@ xsi:noNamespaceSchemaLocation="filmographie_schema.xsd">
         </scénario>
         <image ref="Avatar.jpg"/>
     </film>
-    <film annéeSortie = "2011" NdeVisa ="152368">
+    <film annéeSortie = "2006" NdeVisa ="152368">
         <titre>Drive</titre>
         <genre>Thriller</genre>
         <réalisateur>Nicolas Winding Refn</réalisateur>
         <exploitation>
-            <dateSortie>2011-10-05</dateSortie>
+            <dateSortie>2006-10-05</dateSortie>
             <nbEntrees>13536945</nbEntrees>
             <nbSalles>4235</nbSalles>
             <pays>
@@ -118,7 +118,8 @@ xsi:noNamespaceSchemaLocation="filmographie_schema.xsd">
             <acteur ref="14">Bryan Cranston</acteur>
         </acteurs>
         <durée unité = "min">95 </durée>
-        <scénario>Né fin des années 40 dans une bourgade du Sud, Forrest Gump est affecté d'un quotient intellectuel inférieur à la moyenne. Il livre à qui veut l'entendre l'étrange récit de sa vie, lui qui aura tout vu et tout fait sans comprendre ce qui lui arrivait, traversant et bouleversant en parfait candide près d'un demi-siècle d'histoire américaine.</scénario>
+        <scénario>Un jeune homme solitaire, "The Driver", conduit le jour à Hollywood pour le cinéma en tant que cascadeur et la nuit pour des truands. Ultra professionnel et peu bavard, il a son propre code de conduite. Jamais il n’a pris part aux crimes de ses employeurs autrement qu’en conduisant - et au volant, il est le meilleur !
+        </scénario>
         <image ref="Drive.jpg"/>
     </film>
     <acteurDescription id="1" lieuNaissance="Concord">
