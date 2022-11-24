@@ -43,7 +43,7 @@
             <xs:element name="exploitation" type="exploitationType"/>
             <xs:element name="image" type="imageType"/>
         </xs:sequence>
-        <xs:attribute name="annee" type="xs:string"/>
+        <xs:attribute name="annee" type="xs:integer"/>
         <xs:attribute name="visa" type="xs:string"/>
     </xs:complexType>
     <xs:complexType name="dureeType">
@@ -81,7 +81,7 @@
         <xs:sequence>
             <xs:element name="datesortie" type="xs:string"/>
             <xs:element name="nbsalles" type="xs:string"/>
-            <xs:element name="nbentrees" type="xs:string"/>
+            <xs:element name="nbentrees" type="xs:integer"/>
             <xs:element name="pays" type="paysType"/>
         </xs:sequence>
     </xs:complexType>

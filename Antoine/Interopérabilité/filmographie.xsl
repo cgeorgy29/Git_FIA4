@@ -8,16 +8,48 @@
             </head>
             <body>
                 <xsl:apply-templates select="title"/>
-                <xsl:apply-templates select="films/film"/>
+                <h1>Table des matières des films</h1>
+                <xsl:apply-templates select="films/film" mode="tdm"/>
+                <xsl:apply-templates select="films/film" mode="complet">
+                    <xsl:sort select="film/exploitation/nbentrees" order="ascending" data-type="text" />
+                </xsl:apply-templates>
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="film">
-        <xsl:for-each select="titre">
-            <xsl:element name="H2">
-                <xsl:value-of select="."/>
+
+    <xsl:template match="film" mode="tdm">
+            <xsl:element name="ul">
+                <xsl:for-each select="titre">
+                    <xsl:element name="li">
+                        <a>
+                            <xsl:attribute name="href">
+                                #<xsl:value-of select="."/>
+                            </xsl:attribute>
+                            <xsl:value-of select="."/>
+                        </a>
+                    </xsl:element>
+                </xsl:for-each>
+                (<xsl:value-of select="count(acteurs/acteur)"/> acteurs)
             </xsl:element>
-        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template match="film" mode="complet">
+            <xsl:element name="div">
+                <xsl:element name="H2">
+                    <a>
+                        <xsl:attribute name="name">
+                            <xsl:value-of select="titre"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="titre"/>
+                    </a>
+                    </xsl:element>
+                <xsl:if test="@annee = 2006">
+                    <xsl:element name="span">
+                        <xsl:attribute name="class">nouveaute</xsl:attribute>
+                            Nouveauté
+                    </xsl:element>
+                </xsl:if>
+            </xsl:element>
         Film
         <xsl:for-each select="genres/genre">
             <xsl:element name="i">

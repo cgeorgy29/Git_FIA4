@@ -4,3 +4,12 @@
     border-style: solid;
     background-color:#BBBBBB;
     }
+
+.nouveaute {
+    color: red;
+    font-size: smaller;
+}
+
+div {
+    display: flex;
+}
