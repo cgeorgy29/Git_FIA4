@@ -61,9 +61,11 @@
 
 <xsl:template match="film" mode="complet">
  <h2><xsl:value-of select="titre" /></h2>
+ <xsl:variable name="imgFilm" select="image/@ref"/>
+ <img src="{$imgFilm}" alt="imgfilm" />
 
  <a class="test"><xsl:if test="@annéeSortie=2006">Nouveauté <br/></xsl:if></a>
- <i>films <xsl:value-of select="genre"/> de 
+ <br/><i>films <xsl:value-of select="genre"/> de 
     <xsl:value-of select="durée"/> minutes
     sorti en <xsl:value-of select="@annéeSortie"/>.
 </i> <br/>
