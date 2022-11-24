@@ -52,7 +52,7 @@
 </xsl:template>
 
 <xsl:template match="ion">
-    <li><xsl:value-of select="text()"/>( <xsl:value-of select="quantite"/></li>
+    <li><xsl:value-of select="text()"/>( <xsl:value-of select="quantite"/>)</li>
 </xsl:template>
 
 

@@ -1,0 +1,25 @@
+.histoireStyle {
+    text-align: justify;
+    border-color: red;
+    border-style: solid;
+    background-color:#BBBBBB;
+    }
+
+.test {
+    color: red
+}
+
+.Homme {
+    color: blue
+}
+
+.Femme {
+    color: pink
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
