@@ -6,7 +6,7 @@ b = 2
 x = [23.8, 16.3, 27.2, 7.1, 25.1, 27.5, 19.4, 19.8, 32.2, 20.7]
 y = [115.4, 76.3, 113.8, 81.6, 115.4, 125, 83.6, 75.2, 136.8, 102.8]
 graph = []
-n = 300
+n = 50
 alpha = 0.001
 
 def dmsesurdacalc(x, y, yb):
@@ -32,10 +32,9 @@ for i in range(n):
     yb = list(map(calculy, x))
     a = a-alpha*(dmsesurdacalc(x,y,yb))
     b = b-alpha*(dmsesurdbcalc(x,y,yb))
-    print("a = " + str(a) + " b = " + str(b))
-    atab.append(a)
-    btab.append(b)
+    if(i % 5 == 0):
+        plt.plot(x,yb, label="itération "+str(i))
+        print("a = " + str(a) + " b = " + str(b))
 
-plt.plot([0,50],[b, a*50+b])
 plt.scatter(x,y)
 plt.show()

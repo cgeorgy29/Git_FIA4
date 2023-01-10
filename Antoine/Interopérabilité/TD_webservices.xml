@@ -1,0 +1,45 @@
+1) L'edt d'une promo
+/{2022}/promo/{fia4}
+L'edt d'un prof
+/{2022}/prof/{singer}
+L'edt d'un cours
+/{2022}/cours/{SOA}
+L'edt d'une salle
+/{2022}/salle/{B106}
+
+<edt>
+    <cr>
+        <date>2023-01-02</date>
+        <hor>8h15-10h15</hor>
+        <prof>Singer</prof>
+        <cours>SOA</cours>
+        <salle>B106</salle>
+        <promo>FIA4</promo>
+    </cr>
+</edt>
+
+2) Nb heures de cours pour :
+- Promotion
+/{2022}/promo/{FIA4}/nbheures
+- Prof
+/{2022}/prof/{singer}/nbheures
+- Salle
+/{2022}/salle/{B106}/nbheures
+- Intitulé
+/{2022}/cours/{SOA}/nbheures
+
+<nbrheures>120</nbrheures>
+
+3) Pour un emploi du temps sélectionné, donner l’occupation d’une salle sous la forme d’une réponse de
+type occupée/inoccupée, pour un créneau donné (ex : Savoir si la salle B106 est libre de 8h à 10h, le
+mercredi 10 septembre).
+
+Méthode HEAD appliquées aux URL précédentes
+
+4) Le caractère libre/occupé d'une salle
+/{2022}/salle/{B106}/occupation?horaire={8h-10h}&date={2023-01-02}
+
+<taux>25</taux>
+
+5) Ajout d'un nouveau créneau
+Avec la méthode POST sur /{2022}
