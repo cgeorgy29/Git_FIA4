@@ -1,0 +1,114 @@
+1.
+patient(id: 1) {
+    nom
+    prenom
+}
+ou
+query getPatientByID($id: Int) {
+    patient(id: $id) {
+        nom
+        prenom
+    }
+}
+
+
+2.
+patientByPrenom(prenom: "Nicolas") {
+    age
+}
+
+3.
+patient(id: 1) {
+    traitements {
+        startdate
+        enddate
+        nom
+    }
+}
+
+
+4.
+patientByNom(prenom: "Dupont") {
+    traitements {
+        medicaments {
+            nom
+        }
+    }
+}
+
+5.
+patients(min_age: 18) {
+    nom
+}
+
+6.
+traitements(datedebut: "2023-01-05", datefin: "2023-01-25") {
+    nom
+    medicaments {
+        nom
+    }
+    patient {
+        nom
+    }
+}
+
+7.
+patient(id: 1){
+    traitement {
+        medicaments(maxprix: 10){
+            nom
+        }
+    }
+}
+
+8.
+addPatient(patient: {
+    nom: "Prévert", 
+    prenom: "Jacques", 
+    age: "26"})
+
+9.
+addTraitement(traitement: {
+    id: 0,
+    nom: "traitement1",
+    startdate: "2023-01-01",
+    endDate: "2024-01-01",
+    patientID: 4,
+    medicaments: [{
+        id: 0,
+        nom: "Doliprane 500mg",
+        prix: 2.5}]
+})
+
+10.
+effacerTraitement(id: 6){
+
+}
+
+11.
+{
+    patient1: patientByNom(nom: "Dupont") {
+        id
+    }
+    patient2: patientByNom(nom: "Durand") {
+        id
+    }
+}
+
+12.
+{
+    patient1: patientByNom(nom: "Durand") {
+        id
+    }
+    patient2: patientByNom(nom: "Dupont") {
+        id
+    }
+}
+
+13.
+addMedicament(medicament: {nom: "Aspirine"})
+
+Pas d'effacement possible étant donné le schéma GraphQL
+
+
+
