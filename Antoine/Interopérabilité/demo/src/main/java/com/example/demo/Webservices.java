@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.lang.reflect.Type;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -58,31 +60,38 @@ public class Webservices {
     }
 
     @DeleteMapping(value="/contact/{id}")
-    List<Contact> deleteContact(@PathVariable int id) {
+    ResponseEntity<List<Contact>> deleteContact(@PathVariable int id) {
+        boolean contactDeleted = false;
         for(int i = 0; i<contacts.size(); i++){
             if(id == contacts.get(i).getId()){
                 contacts.remove(contacts.get(i));
+                writeToJSON(contacts);
+                contactDeleted = true;
             }
         }
-        writeToJSON(contacts);
-        return contacts;
+        if (!contactDeleted) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
     @PutMapping(value="/contact/{id}")
-    List<Contact> editContact(@RequestBody Contact contact, @PathVariable int id) {
-        Contact contacttrouve = null;
+    ResponseEntity<List<Contact>> editContact(@RequestBody Contact contact, @PathVariable int id) {
+        boolean contactEdited = false;
         for(int i = 0; i<contacts.size(); i++){
             if(id == contacts.get(i).getId()){
-                contacttrouve = contact;
-                contacttrouve.setId(contacts.get(i).getId());
-                contacts.set(contacts.get(i).getId(), contacttrouve);
+                contacts.set(i, contact);
+                writeToJSON(contacts);
+                contactEdited = true;
             }
         }
-        System.out.println(contacts);
-        writeToJSON(contacts);
-        return contacts;
-    }
+        if (!contactEdited) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 
+    }
+    
     private void writeToJSON(List<Contact> contacts) {
         try {
             FileWriter file = new FileWriter("contacts.json");
